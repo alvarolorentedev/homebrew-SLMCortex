@@ -2,12 +2,11 @@ class Slmcortex < Formula
   include Language::Python::Virtualenv
 
   desc "Package-first runtime for composable AI coding slms"
-  homepage "https://github.com/alvarolorentedev/crazy-coding-llm"
-  url "https://github.com/alvarolorentedev/crazy-coding-llm/archive/refs/tags/v0.1.0.tar.gz"
+  homepage "https://github.com/alvarolorentedev/slmcortex"
+  url "https://github.com/alvarolorentedev/slmcortex/archive/refs/tags/v0.1.1.tar.gz"
   sha256 "2c4d10c89a0ed8f9b38250d9fa37bd0bf9dacf3a200876ebf881611270d1c27f"
   license "MIT"
 
-  depends_on "rust" => :build
   depends_on "libyaml"
   depends_on "python@3.13"
 
@@ -44,11 +43,6 @@ class Slmcortex < Formula
   resource "h11" do
     url "https://files.pythonhosted.org/packages/01/ee/02a2c011bdab74c6fb3c75474d40b3052059d95df7e73351460c8588d963/h11-0.16.0.tar.gz"
     sha256 "4e35b956cf45792e4caa5885e69fba00bdbc6ffafbfa020300e549b208ee5ff1"
-  end
-
-  resource "hf-xet" do
-    url "https://files.pythonhosted.org/packages/4b/2d/57fd21d84d93efb4bd0b962383790e19dd1bc053501b4264c97903b4e83e/hf_xet-1.5.1.tar.gz"
-    sha256 "51ef4500dab3764b41135ee1381a4b62ce56fc54d4c92b719b59e597d6df5bf6"
   end
 
   resource "httpcore" do
